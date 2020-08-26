@@ -3,14 +3,14 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.2"
 name := "expo-slinky"
-version := "0.1.0"
+version := "0.1.1"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
-  "@types/react" -> "16.9.34",
-  "@types/react-native" -> "^0.60.25",
-  "expo" -> "35.0.0",
-  "expo-font" -> "7"
+  "@types/react" -> "16.9.42",
+  "@types/react-native" -> "^0.62.4",
+  "expo" -> "^37.0.7",
+  "expo-font" -> "8.1.1"
 )
 
 /* disabled because it somehow triggers many warnings */
@@ -19,13 +19,11 @@ scalaJSLinkerConfig ~= (_.withSourceMap(false))
 // because npm is slow
 useYarn := true
 
-stExperimentalEnableImplicitOps := true
-
 // say we want custom code for slinky
 stFlavour := Flavour.SlinkyNative
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("expo-font", "expo")
+stMinimize := Selection.AllExcept("expo-font", "expo", "expo-constants", "expo-sqlite")
 
 // shade into another package
 stOutputPackage := "vision.id.expo.facade"
