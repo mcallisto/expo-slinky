@@ -1,16 +1,17 @@
 /* ScalablyTyped configuration */
 enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
-scalaVersion := "2.13.2"
+scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.1.1"
+version := "0.1.2"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
   "@types/react" -> "16.9.42",
   "@types/react-native" -> "^0.62.4",
   "expo" -> "^37.0.7",
-  "expo-font" -> "8.1.1"
+  "expo-font" -> "8.1.1",
+  "expo-localization" -> "8.2.1"
 )
 
 /* disabled because it somehow triggers many warnings */
@@ -23,7 +24,7 @@ useYarn := true
 stFlavour := Flavour.SlinkyNative
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("expo-font", "expo", "expo-constants", "expo-sqlite")
+stMinimize := Selection.AllExcept("expo-localization", "expo-font", "expo", "expo-constants", "expo-sqlite")
 
 // shade into another package
 stOutputPackage := "vision.id.expo.facade"
