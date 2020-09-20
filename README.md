@@ -1,12 +1,15 @@
 # expo-slinky
-Expo bindings for slinky (powered by ScalablyTyped) with [expo-localization](https://docs.expo.io/versions/v37.0.0/sdk/localization/) and [expo-font](https://docs.expo.io/versions/v37.0.0/sdk/font/)
+Expo v37 bindings for slinky (powered by ScalablyTyped) with:
+ * [expo-localization](https://docs.expo.io/versions/v37.0.0/sdk/localization/) 
+ * [expo-font](https://docs.expo.io/versions/v37.0.0/sdk/font/)
+ * [expo-constants](https://docs.expo.io/versions/v37.0.0/sdk/constants/)
 
 It is distributed for Scala 2.13 and Scala.js 1
 
 ```
 resolvers += Resolver.bintrayRepo("mcallisto", "libs")
 libraryDependencies ++= Seq(
-    "default" %%% "expo-slinky" % "0.1.2" 
+    "default" %%% "expo-slinky" % "0.1.3" 
 ) 
 ```
 
