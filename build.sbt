@@ -3,15 +3,15 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.1.3"
+version := "0.1.4"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
-  "@types/react" -> "16.9.42",
-  "@types/react-native" -> "^0.62.4",
-  "expo" -> "^37.0.7",
-  "expo-constants" -> "9.1.1",
-  "expo-font" -> "8.1.1",
+  "@types/react" -> "~16.9.41",
+  "@types/react-native" -> "~0.62.13",
+  "expo" -> "^38.0.10",
+  "expo-constants" -> "~9.1.1",
+  "expo-font" -> "~8.2.1",
   "expo-localization" -> "8.2.1"
 )
 
