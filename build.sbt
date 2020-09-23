@@ -3,16 +3,18 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.1.4"
+version := "0.1.5"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
   "@types/react" -> "~16.9.41",
   "@types/react-native" -> "~0.62.13",
-  "expo" -> "^38.0.10",
+  "expo" -> "^38.0.0",
   "expo-constants" -> "~9.1.1",
   "expo-font" -> "~8.2.1",
-  "expo-localization" -> "8.2.1"
+  "expo-localization" -> "~8.2.1",
+  "expo-sqlite" -> "~8.2.1",
+  "react-native" -> "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz"
 )
 
 /* disabled because it somehow triggers many warnings */
