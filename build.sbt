@@ -3,13 +3,14 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.1.7"
+version := "0.1.8"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
   "@types/react" -> "~16.9.41",
   "@types/react-native" -> "~0.62.13",
   "expo" -> "^38.0.0",
+  "expo-asset" -> "8.2.0",
   "expo-av" -> "~8.2.1",
   "expo-constants" -> "~9.1.1",
   "expo-font" -> "~8.2.1",
@@ -29,7 +30,16 @@ useYarn := true
 stFlavour := Flavour.SlinkyNative
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("expo-localization", "expo-font", "expo", "expo-constants", "expo-sqlite", "expo-av", "expo-status-bar")
+stMinimize := Selection.AllExcept(
+  "expo-localization",
+  "expo-font",
+  "expo",
+  "expo-constants",
+  "expo-sqlite",
+  "expo-asset",
+  "expo-av",
+  "expo-status-bar"
+)
 
 // shade into another package
 stOutputPackage := "vision.id.expo.facade"
@@ -49,6 +59,6 @@ pomExtra := (
         <name>Mario Càllisto</name>
       </developer>
     </developers>
-  )
+)
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "libs"

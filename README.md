@@ -5,6 +5,7 @@
  * [expo-constants](https://docs.expo.io/versions/v38.0.0/sdk/constants/)
  * [expo-sqlite](https://docs.expo.io/versions/v38.0.0/sdk/sqlite/)
  * [expo-status-bar](https://docs.expo.io/versions/v38.0.0/sdk/status-bar/)
+ * [expo-asset](https://docs.expo.io/versions/v38.0.0/sdk/asset/)
  * [expo-av](https://docs.expo.io/versions/v38.0.0/sdk/audio/)
 
 It is distributed for Scala 2.13 and Scala.js 1
@@ -12,7 +13,7 @@ It is distributed for Scala 2.13 and Scala.js 1
 ```
 resolvers += Resolver.bintrayRepo("mcallisto", "libs")
 libraryDependencies ++= Seq(
-  "default" %%% "expo-slinky" % "0.1.7" 
+  "default" %%% "expo-slinky" % "0.1.8" 
 ) 
 ```
 
@@ -27,13 +28,13 @@ See the following compilation output:
 [warn] Wrote expo-status-bar (17 files)
 [warn] Wrote expo-constants (19 files)
 [warn] Wrote expo (102 files)
+[warn] Wrote expo-asset (24 files)
 [warn] Wrote expo-av (218 files)
 [warn] Wrote minimized @unimodules/core (2 files)
 [warn] Wrote minimized unimodules-permissions-interface (4 files)
 [warn] Wrote minimized @unimodules/react-native-adapter (5 files)
-[warn] Wrote minimized prop-types (3 files)
+[warn] Wrote minimized prop-types (4 files)
 [warn] Wrote minimized expo-linking (4 files)
-[warn] Wrote minimized expo-asset (6 files)
 [warn] Wrote minimized csstype (0 files)
 [warn] Wrote minimized react (29 files)
 [warn] Wrote minimized std (11 files)
