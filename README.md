@@ -7,6 +7,7 @@
  * [expo-status-bar](https://docs.expo.io/versions/v38.0.0/sdk/status-bar/)
  * [expo-asset](https://docs.expo.io/versions/v38.0.0/sdk/asset/)
  * [expo-av](https://docs.expo.io/versions/v38.0.0/sdk/audio/)
+ * [expo-linking](https://docs.expo.io/workflow/linking/)
  * [expo-web-browser](https://docs.expo.io/versions/v38.0.0/sdk/webbrowser/)
 
 It is distributed for Scala 2.13 and Scala.js 1
@@ -14,7 +15,7 @@ It is distributed for Scala 2.13 and Scala.js 1
 ```
 resolvers += Resolver.bintrayRepo("mcallisto", "libs")
 libraryDependencies ++= Seq(
-  "default" %%% "expo-slinky" % "0.1.9" 
+  "default" %%% "expo-slinky" % "0.1.10" 
 ) 
 ```
 
@@ -27,6 +28,7 @@ See the following compilation output:
 [warn] Wrote expo-font (13 files)
 [warn] Wrote expo-sqlite (15 files)
 [warn] Wrote expo-status-bar (17 files)
+[warn] Wrote expo-linking (10 files)
 [warn] Wrote expo-web-browser (16 files)
 [warn] Wrote expo-constants (19 files)
 [warn] Wrote expo (102 files)
