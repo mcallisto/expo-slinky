@@ -3,7 +3,7 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.1.8"
+version := "0.1.9"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
@@ -17,6 +17,7 @@ Compile / npmDependencies ++= Seq(
   "expo-localization" -> "~8.2.1",
   "expo-sqlite" -> "~8.2.1",
   "expo-status-bar" -> "1.0.2",
+  "expo-web-browser" -> "~8.2.1",
   "react-native" -> "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz"
 )
 
@@ -38,7 +39,8 @@ stMinimize := Selection.AllExcept(
   "expo-sqlite",
   "expo-asset",
   "expo-av",
-  "expo-status-bar"
+  "expo-status-bar",
+  "expo-web-browser"
 )
 
 // shade into another package
