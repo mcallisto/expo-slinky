@@ -13,10 +13,7 @@
 It is distributed for Scala 2.13 and Scala.js 1
 
 ```
-resolvers += Resolver.bintrayRepo("mcallisto", "libs")
-libraryDependencies ++= Seq(
-  "default" %%% "expo-slinky" % "0.1.10" 
-) 
+libraryDependencies ++= Seq("vision.id" %%% "expo-slinky" % "0.1.10") 
 ```
 
 ## Minimization
@@ -31,16 +28,15 @@ See the following compilation output:
 [warn] Wrote expo-linking (10 files)
 [warn] Wrote expo-web-browser (16 files)
 [warn] Wrote expo-constants (19 files)
-[warn] Wrote expo (102 files)
+[warn] Wrote expo (93 files)
 [warn] Wrote expo-asset (24 files)
 [warn] Wrote expo-av (218 files)
 [warn] Wrote minimized @unimodules/core (2 files)
 [warn] Wrote minimized unimodules-permissions-interface (4 files)
 [warn] Wrote minimized @unimodules/react-native-adapter (5 files)
 [warn] Wrote minimized prop-types (4 files)
-[warn] Wrote minimized expo-linking (4 files)
 [warn] Wrote minimized csstype (0 files)
 [warn] Wrote minimized react (29 files)
 [warn] Wrote minimized std (11 files)
-[warn] Wrote minimized react-native (310 files)
+[warn] Wrote minimized react-native (313 files)
 ```

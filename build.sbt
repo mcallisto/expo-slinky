@@ -48,21 +48,53 @@ stMinimize := Selection.AllExcept(
 // shade into another package
 stOutputPackage := "vision.id.expo.facade"
 
-publishMavenStyle := true
-homepage := Some(new URL("https://github.com/mcallisto/expo-slinky"))
-startYear := Some(2020)
-pomExtra := (
-  <scm>
-    <connection>scm:git:github.com:/mcallisto/expo-slinky</connection>
-    <developerConnection>scm:git:git@github.com:mcallisto/expo-slinky.git</developerConnection>
-    <url>github.com:mcallisto/expo-slinky.git</url>
-  </scm>
-    <developers>
-      <developer>
-        <id>mcallisto</id>
-        <name>Mario Càllisto</name>
-      </developer>
-    </developers>
+ThisBuild / organization := "vision.id.expo-slinky"
+ThisBuild / organizationName := "vision.id"
+ThisBuild / organizationHomepage := Some(url("http://id.vision/"))
+
+ThisBuild / scmInfo := Some(
+  ScmInfo(
+    url("https://github.com/mcallisto/expo-slinky"),
+    "scm:git@github.com:mcallisto/expo-slinky.git"
+  )
 )
-licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "libs"
+ThisBuild / developers := List(
+  Developer(
+    id    = "mcallisto",
+    name  = "Mario Càllisto",
+    email = "mario.callisto@gmail.com",
+    url   = url("https://github.com/mcallisto")
+  )
+)
+
+ThisBuild / description := "Expo bindings for slinky (powered by ScalablyTyped)."
+ThisBuild / licenses := List("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt"))
+ThisBuild / homepage := Some(url("https://github.com/mcallisto/expo-slinky"))
+
+// Remove all additional repository other than Maven Central from POM
+ThisBuild / pomIncludeRepository := { _ => false }
+ThisBuild / publishTo := {
+  val nexus = "https://oss.sonatype.org/"
+  if (isSnapshot.value) Some("snapshots" at nexus + "content/repositories/snapshots")
+  else Some("releases" at nexus + "service/local/staging/deploy/maven2")
+}
+ThisBuild / publishMavenStyle := true
+
+//publishMavenStyle := true
+//homepage := Some(new URL("https://github.com/mcallisto/expo-slinky"))
+//startYear := Some(2020)
+//pomExtra := (
+//  <scm>
+//    <connection>scm:git:github.com:/mcallisto/expo-slinky</connection>
+//    <developerConnection>scm:git:git@github.com:mcallisto/expo-slinky.git</developerConnection>
+//    <url>github.com:mcallisto/expo-slinky.git</url>
+//  </scm>
+//    <developers>
+//      <developer>
+//        <id>mcallisto</id>
+//        <name>Mario Càllisto</name>
+//      </developer>
+//    </developers>
+//)
+//licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+//bintrayRepository := "libs"
