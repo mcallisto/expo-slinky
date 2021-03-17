@@ -3,23 +3,23 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.1.10"
+version := "0.2.0"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
-  "@types/react" -> "~16.9.41",
-  "@types/react-native" -> "~0.62.13",
-  "expo" -> "^38.0.0",
-  "expo-asset" -> "8.2.0",
-  "expo-av" -> "~8.2.1",
-  "expo-constants" -> "~9.1.1",
-  "expo-font" -> "~8.2.1",
-  "expo-localization" -> "~8.2.1",
+  "@types/react" -> "~16.9.35",
+  "@types/react-native" -> "~0.63.2",
+  "expo" -> "^39.0.0",
+  "expo-asset" -> "~8.2.0",
+  "expo-av" -> "~8.6.0",
+  "expo-constants" -> "~9.2.0",
+  "expo-font" -> "~8.2.0",
+  "expo-localization" -> "~9.0.0",
   "expo-sqlite" -> "~8.2.1",
   "expo-status-bar" -> "1.0.2",
   "expo-linking" -> "1.0.4",
-  "expo-web-browser" -> "~8.2.1",
-  "react-native" -> "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz"
+  "expo-web-browser" -> "~8.5.0",
+  "react-native" -> "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz"
 )
 
 /* disabled because it somehow triggers many warnings */
@@ -48,7 +48,7 @@ stMinimize := Selection.AllExcept(
 // shade into another package
 stOutputPackage := "vision.id.expo.facade"
 
-ThisBuild / organization := "vision.id.expo-slinky"
+ThisBuild / organization := "vision.id"
 ThisBuild / organizationName := "vision.id"
 ThisBuild / organizationHomepage := Some(url("http://id.vision/"))
 
@@ -79,22 +79,3 @@ ThisBuild / publishTo := {
   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 ThisBuild / publishMavenStyle := true
-
-//publishMavenStyle := true
-//homepage := Some(new URL("https://github.com/mcallisto/expo-slinky"))
-//startYear := Some(2020)
-//pomExtra := (
-//  <scm>
-//    <connection>scm:git:github.com:/mcallisto/expo-slinky</connection>
-//    <developerConnection>scm:git:git@github.com:mcallisto/expo-slinky.git</developerConnection>
-//    <url>github.com:mcallisto/expo-slinky.git</url>
-//  </scm>
-//    <developers>
-//      <developer>
-//        <id>mcallisto</id>
-//        <name>Mario Càllisto</name>
-//      </developer>
-//    </developers>
-//)
-//licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-//bintrayRepository := "libs"
