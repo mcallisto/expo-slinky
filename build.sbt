@@ -3,23 +3,24 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.3"
 name := "expo-slinky"
-version := "0.2.0"
+version := "0.2.1"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
   "@types/react" -> "~16.9.35",
   "@types/react-native" -> "~0.63.2",
-  "expo" -> "^39.0.0",
-  "expo-asset" -> "~8.2.0",
-  "expo-av" -> "~8.6.0",
-  "expo-constants" -> "~9.2.0",
-  "expo-font" -> "~8.2.0",
-  "expo-localization" -> "~9.0.0",
+  "expo" -> "^40.0.0",
+  "expo-app-loading" -> "~1.0.1",
+  "expo-asset" -> "~8.2.1",
+  "expo-av" -> "~8.7.0",
+  "expo-constants" -> "~9.3.3",
+  "expo-font" -> "~8.4.0",
+  "expo-localization" -> "~9.1.0",
   "expo-sqlite" -> "~8.2.1",
-  "expo-status-bar" -> "1.0.2",
-  "expo-linking" -> "1.0.4",
-  "expo-web-browser" -> "~8.5.0",
-  "react-native" -> "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz"
+  "expo-status-bar" -> "~1.0.3",
+  "expo-linking" -> "~2.0.1",
+  "expo-web-browser" -> "~8.6.0",
+  "react-native" -> "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz"
 )
 
 /* disabled because it somehow triggers many warnings */
@@ -34,6 +35,7 @@ stFlavour := Flavour.SlinkyNative
 // focus only on these libraries
 stMinimize := Selection.AllExcept(
   "expo-localization",
+  "expo-app-loading",
   "expo-font",
   "expo",
   "expo-constants",

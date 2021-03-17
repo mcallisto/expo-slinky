@@ -1,19 +1,19 @@
 # expo-slinky
-[Expo SDK 39](https://dev.to/expo/expo-sdk-39-is-now-available-1lm8) bindings for slinky (powered by ScalablyTyped) with:
- * [expo-localization](https://docs.expo.io/versions/v39.0.0/sdk/localization/) 
- * [expo-font](https://docs.expo.io/versions/v39.0.0/sdk/font/)
- * [expo-constants](https://docs.expo.io/versions/v39.0.0/sdk/constants/)
- * [expo-sqlite](https://docs.expo.io/versions/v39.0.0/sdk/sqlite/)
- * [expo-status-bar](https://docs.expo.io/versions/v39.0.0/sdk/status-bar/)
- * [expo-asset](https://docs.expo.io/versions/v39.0.0/sdk/asset/)
- * [expo-av](https://docs.expo.io/versions/v39.0.0/sdk/audio/)
+[Expo SDK 40](https://dev.to/expo/expo-sdk-40-is-now-available-1lm8) bindings for slinky (powered by ScalablyTyped) with:
+ * [expo-localization](https://docs.expo.io/versions/v40.0.0/sdk/localization/) 
+ * [expo-font](https://docs.expo.io/versions/v40.0.0/sdk/font/)
+ * [expo-constants](https://docs.expo.io/versions/v40.0.0/sdk/constants/)
+ * [expo-sqlite](https://docs.expo.io/versions/v40.0.0/sdk/sqlite/)
+ * [expo-status-bar](https://docs.expo.io/versions/v40.0.0/sdk/status-bar/)
+ * [expo-asset](https://docs.expo.io/versions/v40.0.0/sdk/asset/)
+ * [expo-av](https://docs.expo.io/versions/v40.0.0/sdk/audio/)
  * [expo-linking](https://docs.expo.io/workflow/linking/)
- * [expo-web-browser](https://docs.expo.io/versions/v39.0.0/sdk/webbrowser/)
+ * [expo-web-browser](https://docs.expo.io/versions/v40.0.0/sdk/webbrowser/)
 
 It is distributed for Scala 2.13 and Scala.js 1
 
 ```
-libraryDependencies ++= Seq("vision.id" %%% "expo-slinky" % "0.2.0") 
+libraryDependencies ++= Seq("vision.id" %%% "expo-slinky" % "0.2.1") 
 ```
 
 ## Minimization
