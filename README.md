@@ -1,6 +1,7 @@
 # expo-slinky
 [Expo SDK 40](https://dev.to/expo/expo-sdk-40-is-now-available-1lm8) bindings for slinky (powered by ScalablyTyped) with:
- * [expo-localization](https://docs.expo.io/versions/v40.0.0/sdk/localization/) 
+ * [expo-app-loading](https://docs.expo.io/versions/v40.0.0/sdk/app-loading/)
+ * [expo-localization](https://docs.expo.io/versions/v40.0.0/sdk/localization/)
  * [expo-font](https://docs.expo.io/versions/v40.0.0/sdk/font/)
  * [expo-constants](https://docs.expo.io/versions/v40.0.0/sdk/constants/)
  * [expo-sqlite](https://docs.expo.io/versions/v40.0.0/sdk/sqlite/)
@@ -25,10 +26,10 @@ See the following compilation output:
 [warn] Wrote expo-font (13 files)
 [warn] Wrote expo-sqlite (15 files)
 [warn] Wrote expo-status-bar (17 files)
-[warn] Wrote expo-linking (10 files)
+[warn] Wrote expo-linking (13 files)
 [warn] Wrote expo-web-browser (16 files)
-[warn] Wrote expo-constants (19 files)
-[warn] Wrote expo (79 files)
+[warn] Wrote expo-constants (20 files)
+[warn] Wrote expo (65 files)
 [warn] Wrote expo-asset (24 files)
 [warn] Wrote expo-av (213 files)
 [warn] Wrote minimized @unimodules/core (2 files)

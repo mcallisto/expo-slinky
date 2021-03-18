@@ -47,6 +47,8 @@ stMinimize := Selection.AllExcept(
   "expo-web-browser"
 )
 
+stIgnore := List("@expo/config-plugins")
+
 // shade into another package
 stOutputPackage := "vision.id.expo.facade"
 
