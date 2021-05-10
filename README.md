@@ -2,6 +2,7 @@
 [Expo SDK 40](https://dev.to/expo/expo-sdk-40-is-now-available-1lm8) bindings for slinky (powered by ScalablyTyped) with:
  * [expo-app-loading](https://docs.expo.io/versions/v40.0.0/sdk/app-loading/)
  * [expo-auth-session](https://docs.expo.io/versions/v40.0.0/sdk/auth-session/)
+ * [expo-crypto](https://docs.expo.io/versions/v40.0.0/sdk/crypto/)
  * [expo-localization](https://docs.expo.io/versions/v40.0.0/sdk/localization/)
  * [expo-font](https://docs.expo.io/versions/v40.0.0/sdk/font/)
  * [expo-constants](https://docs.expo.io/versions/v40.0.0/sdk/constants/)
@@ -15,7 +16,7 @@
 It is distributed for Scala 2.13 and Scala.js 1
 
 ```
-libraryDependencies ++= Seq("vision.id" %%% "expo-slinky" % "0.2.2") 
+libraryDependencies ++= Seq("vision.id" %%% "expo-slinky" % "0.2.3") 
 ```
 
 ## Minimization
@@ -34,6 +35,7 @@ See the following compilation output:
 [warn] Wrote expo-asset (13 files)
 [warn] Wrote expo (42 files)
 [warn] Wrote expo-auth-session (42 files)
+[warn] Wrote expo-crypto (5 files)
 [warn] Wrote expo-av (44 files)
 [warn] Wrote minimized @unimodules/core (2 files)
 [warn] Wrote minimized unimodules-permissions-interface (2 files)

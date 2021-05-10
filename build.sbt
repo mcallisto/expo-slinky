@@ -3,7 +3,7 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.4"
 name := "expo-slinky"
-version := "0.2.2"
+version := "0.2.3"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
@@ -13,6 +13,7 @@ Compile / npmDependencies ++= Seq(
   "expo-app-loading" -> "~1.0.1",
   "expo-asset" -> "~8.2.1",
   "expo-auth-session" -> "2.0.3",
+  "expo-crypto" -> "9.1.0",
   "expo-av" -> "~8.7.0",
   "expo-constants" -> "~9.3.3",
   "expo-font" -> "~8.4.0",
@@ -40,6 +41,7 @@ stMinimize := Selection.AllExcept(
   "expo-font",
   "expo",
   "expo-constants",
+  "expo-crypto",
   "expo-sqlite",
   "expo-asset",
   "expo-auth-session",
